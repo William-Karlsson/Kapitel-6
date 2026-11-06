@@ -1,0 +1,2 @@
+temperaturer = [int(input(f"Skriv temp för station {i}: ")) for i in range(1,int(input("Antal stationer: ")) + 1)]
+print("Medelvärde: ", sum(temperaturer)/len(temperaturer), "\nTemperaturer högre än medelvärdet:", ", ".join(str(t) for t in list(i for i in temperaturer if i > sum(temperaturer)/len(temperaturer))))
